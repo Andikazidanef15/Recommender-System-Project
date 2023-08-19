@@ -16,8 +16,9 @@ def recommender_location_based(df, model, user_id, district_lat_long):
             df (pd.DataFrame): Original DataFrame
             model (NeuMF.NCF): Pretrained NCF model
             user_id (str): User ID
-            district_lat_long (dict): Dictionary containing latitude and longitude coordinates from each district with format:
-            {'district1': [lat, long]}
+            district_lat_long (dict): Dictionary containing latitude and longitude coordinates 
+            from each district with the same format as coordinates.json:
+            {'district1': [lat, long]} 
     """
     # Subset menu_type,menu_category,menu_category_details, menu_name,
     # Include only unique values
