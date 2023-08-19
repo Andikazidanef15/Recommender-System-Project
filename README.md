@@ -5,7 +5,7 @@ Create menu's recommendation based on user's preference and user's customer segm
 # API Setup
 Follow these steps to run the API code for generating sales and menus recommendation for particular user:
 1. Insert the data (csv format) in the data folder
-2. Install all required packages
+2. Install all required packages via terminal
 ```
 pip install -r requirements.txt
 ```
@@ -13,7 +13,7 @@ pip install -r requirements.txt
 ```
 python main.py
 ```
-4. Input User ID listed in the data and run this,
+4. On seperate terminal, input User ID listed in the data and run this,
 ```
 curl -X POST http://127.0.0.1:80/recms -H 'Content-Type: application/json' -d '{"user_id":"XXXXXXXX"}'
 ```
@@ -25,7 +25,7 @@ curl -X POST http://127.0.0.1:80/recms -H 'Content-Type: application/json' -d '{
 # Training and Evaluate NCF Model
 To train and evaluate NCF model run these steps:
 1. Insert the data (csv format) in the data folder
-2. Install all required packages
+2. Install all required packages via terminal
 ```
 pip install -r requirements.txt
 ```
