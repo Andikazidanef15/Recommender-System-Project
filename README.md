@@ -1,8 +1,8 @@
-# RECOMMENDER SYSTEM PROJECT
+# Recommender System Project
 Create menu's recommendation based on user's preference and user's customer segmentation by using Neural Collaborative Filtering (NCF) [He et al., 2017](https://arxiv.org/abs/1708.05031) and K-Means Clustering
 . Due to sensitive information in the dataset, the data used in the recommender/cluster model is not stored in this data folder. 
 
-# API SETUP
+# API Setup
 Follow these steps to run the API code for generating sales and menus recommendation for particular user:
 1. Insert the data (csv format) in the data folder
 2. Install all required packages
@@ -22,7 +22,7 @@ curl -X POST http://127.0.0.1:80/recms -H 'Content-Type: application/json' -d '{
 {'sales_id':['AAA','BBB',...], 'menu_id': ['CCC', 'DDD', ...]}
 ```
 
-# TRAINING AND EVALUATE MODEL
+# Training and Evaluate NCF Model
 To train and evaluate NCF model run these steps:
 1. Insert the data (csv format) in the data folder
 2. Install all required packages
@@ -41,3 +41,6 @@ python train.py --checkpoint lightning_logs/menus_df/checkpoints/epoch=49-step=5
 ```
 python evaluate.py --pretrained lightning_logs/menus_df/checkpoints/epoch=49-step=504500.ckpt
 ```
+
+# Notebook
+For more detailed information about the analyis and code, you can run the Recommender_System.ipynb. Here you can find explanation for each steps in developing recommender system and cluster customers. Outputs are not shown because of sensitive information, you may want to include the data in data folder
