@@ -1,2 +1,2 @@
 # Data Folder
-Store the user and menu dataset in this folder
+Store the dataset in this folder
