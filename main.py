@@ -95,7 +95,6 @@ def make_rec():
     if request.method == "POST":
         data = request.get_json()
         user_id = data["user_id"]
-        #curl -X POST http://127.0.0.1:80/recms -H 'Content-Type: application/json' -d '{"user_id":"72512d30-7126-4b6c-91ce-1a3f00fba4b5"}'
         dict_label_name = {0 : 'Silver Tier Cafe Users',
                             1 : 'Basic Tier Traditional Users',
                             2 : 'Silver Tier Bandung Cafe Users',
