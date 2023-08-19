@@ -31,9 +31,13 @@ pip install -r requirements.txt
 ```
 3. Run train.py and specify model parameters with arguments, for example if you want to train the model from beginning:
 ```
-python train.py --device cpu/gpu --num_factors 10 --num_hiddens '[10,10,10]' --num_neg 8 --epochs 50 --batch_size 16 --weight_decay 1e-5 --lr 0.01
+python train.py --path data/ --device cpu/gpu --num_factors 10 --num_hiddens '[10,10,10]' --num_neg 8 --epochs 50 --batch_size 16 --weight_decay 1e-5 --lr 0.01
 ```
-If you want to use pretrained model, you can use this
+If you want to use pretrained model, use this format
 ```
-python train.py --checkpoint lightning_logs/
+python train.py --checkpoint lightning_logs/menus_df/checkpoints/epoch=49-step=504500.ckpt
+```
+4. Evaluate model by using this format
+```
+python evaluate.py --pretrained lightning_logs/menus_df/checkpoints/epoch=49-step=504500.ckpt
 ```
