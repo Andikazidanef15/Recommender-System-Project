@@ -2,6 +2,8 @@
 Create menu's recommendation based on user's preference and user's customer segmentation by using Neural Collaborative Filtering (NCF) [He et al., 2017](https://arxiv.org/abs/1708.05031) and K-Means Clustering
 . Due to sensitive information in the dataset, the data used in the recommender/cluster model is not stored in this data folder. 
 
+Pretrained NCF model available at `lightning_logs/menus_df/checkpoints/epoch=49-step=504500.ckpt` using NVIDIA T4 GPU on original data.
+
 # API Setup
 Follow these steps to run the API code for generating sales and menus recommendation for particular user:
 1. Insert the data (csv format) in the data folder
