@@ -9,7 +9,7 @@ Follow these steps to run the API code for generating sales and menus recommenda
 ```
 pip install -r requirements.txt
 ```
-3. Run main.py to start the flask API
+3. Run `main.py` to start the flask API
 ```
 python main.py
 ```
@@ -29,7 +29,7 @@ To train and evaluate NCF model run these steps:
 ```
 pip install -r requirements.txt
 ```
-3. Run train.py and specify model parameters with arguments, for example if you want to train the model from beginning:
+3. Run `train.py` and specify model parameters with arguments, for example if you want to train the model from beginning:
 ```
 python train.py --path data/ --device cpu/gpu --num_factors 10 --num_hiddens '[10,10,10]' --num_neg 8 --epochs 50 --batch_size 16 --weight_decay 1e-5 --lr 0.01
 ```
