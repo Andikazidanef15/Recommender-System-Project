@@ -45,7 +45,7 @@ python evaluate.py --pretrained lightning_logs/menus_df/checkpoints/epoch=49-ste
 ```
 
 # Notebook
-For more detailed information about the analyis and code, you can run the Recommender_System.ipynb. Here you can find explanation for each steps in developing recommender system and cluster customers. Outputs are not shown because of sensitive information, you may want to include the data in data folder.
+For more detailed information about the analyis and code, you can run the `Recommender_System.ipynb`. Here you can find explanation for each steps in developing recommender system and cluster customers. Outputs are not shown because of sensitive information, you may want to include the data in data folder.
 
 # References
 1. [Neural Collaborative Filtering for Personalized Ranking](https://d2l.ai/chapter_recommender-systems/neumf.html)
