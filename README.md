@@ -35,7 +35,7 @@ python train.py --path data/ --device cpu --num_factors 10 --num_hiddens '[10,10
 ```
 If you want to use pretrained model, use this format
 ```
-python train.py --checkpoint lightning_logs/menus_df/checkpoints/epoch=49-step=504500.ckpt
+python train.py --device gpu --checkpoint lightning_logs/menus_df/checkpoints/epoch=49-step=504500.ckpt
 ```
 All the checkpoints are stored in `lightning_logs` folder
 
