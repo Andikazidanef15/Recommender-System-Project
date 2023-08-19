@@ -6,6 +6,10 @@ from scipy.spatial.distance import euclidean
 import json
 
 def aggregate_df(df):
+    '''Agregate data based on user ID then get all the necessary information to do clustering
+        Args:
+        df (pd.DataFrame): Original Data stored in data folder
+    '''
     # Read District Lat Long JSON File
     with open('coordinates.json') as json_file:
         district_lat_long = json.load(json_file)
@@ -38,6 +42,10 @@ def aggregate_df(df):
     return agg_all_scaled
 
 def cluster(agg_all_scaled):
+    '''Do customer segmentation using K-Means clustering for scaled aggregated data and retrieve closest users that represent each segment
+        Args:
+        df (pd.DataFrame): Original Data stored in data folder
+    '''
     # Load K-Means Model
     with open("cluster_model/k_means.pkl", "rb") as f:
         km = pickle.load(f)
