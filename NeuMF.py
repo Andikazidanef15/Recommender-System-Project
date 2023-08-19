@@ -11,6 +11,10 @@ class NCF(pl.LightningModule):
           nums_hiddens (list): List containing number of neurons in each layer
           num_users (int): Number of unique users
           num_items (int): Number of unique menus
+          num_negatives (int): Number of negative samples generated for each user
+          batch_size (int): Batch size for data loader
+          weight_decay (float): L2 regularizer for Adam optimizer
+          lr (float): Learning rate for Adam optimizer
           train_data (pd.DataFrame): Train Dataframe containing user and menu pair
           val_data (pd.DataFrame): Validation Dataframe containing user and menu pair
           all_menu_ids (list): List containing all menu_ids (train + test)
