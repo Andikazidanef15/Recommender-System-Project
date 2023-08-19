@@ -37,6 +37,8 @@ If you want to use pretrained model, use this format
 ```
 python train.py --checkpoint lightning_logs/menus_df/checkpoints/epoch=49-step=504500.ckpt
 ```
+All the checkpoints are stored in `lightning_logs` folder
+
 4. Evaluate model by using this format
 ```
 python evaluate.py --pretrained lightning_logs/menus_df/checkpoints/epoch=49-step=504500.ckpt
