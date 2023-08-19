@@ -31,7 +31,7 @@ pip install -r requirements.txt
 ```
 3. Run `train.py` and specify model parameters with arguments, for example if you want to train the model from beginning:
 ```
-python train.py --path data/ --device cpu/gpu --num_factors 10 --num_hiddens '[10,10,10]' --num_neg 8 --epochs 50 --batch_size 16 --weight_decay 1e-5 --lr 0.01
+python train.py --path data/ --device cpu --num_factors 10 --num_hiddens '[10,10,10]' --num_neg 8 --epochs 50 --batch_size 16 --weight_decay 1e-5 --lr 0.01
 ```
 If you want to use pretrained model, use this format
 ```
