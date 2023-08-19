@@ -13,7 +13,7 @@ pip install -r requirements.txt
 ```
 python main.py
 ```
-4. Input User ID listed in the data and run this code,
+4. Input User ID listed in the data and run this,
 ```
 curl -X POST http://127.0.0.1:80/recms -H 'Content-Type: application/json' -d '{"user_id":"XXXXXXXX"}'
 ```
